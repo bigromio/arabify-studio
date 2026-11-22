@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
@@ -29,7 +29,7 @@ footer{color:var(--mut);font-size:14px;padding:40px 0}
 </head>
 <body>
 <div class="w">
-<header><div class="logo">Arabify<span>.</span>Studio</div><button class="lang" onclick="tg()" id="lb">العربية</button></header>
+<header><div class="logo" dir="ltr">Arabify<span>.</span>Studio</div><button class="lang" onclick="tg()" id="lb">العربية</button></header>
 
 <h1 data-en="Your landing page, in native Arabic. Live in 24 hours." data-ar="صفحتك بعربية أصيلة تبيع. جاهزة خلال 24 ساعة.">Your landing page, in native Arabic. Live in 24 hours.</h1>
 <p class="sub" data-en="Machine translation kills trust in Saudi Arabia and the Gulf. I rewrite your page the way local customers actually speak, with a clean right-to-left layout. Flat price, no surprises."
@@ -47,18 +47,18 @@ footer{color:var(--mut);font-size:14px;padding:40px 0}
 
 <h2 data-en="Extra services" data-ar="خدمات إضافية">Extra services</h2>
 <div class="grid" style="margin-top:16px">
-<div class="card"><h3 data-en="Video to Short Clips" data-ar="تقطيع الفيديو لمقاطع قصيرة">Video to Short Clips</h3><div class="price" style="font-size:24px">from $100</div>
+<div class="card"><h3 data-en="Video to Short Clips" data-ar="تقطيع الفيديو لمقاطع قصيرة">Video to Short Clips</h3><div class="price" style="font-size:24px" data-en="from $100" data-ar="ابتداءً من 100$">from $100</div>
 <ul><li data-en="3-5 vertical clips with captions" data-ar="3-5 مقاطع عمودية مع كابشن">3-5 vertical clips with captions</li><li data-en="Arabic and English subtitles" data-ar="ترجمة عربية وإنجليزية">Arabic and English subtitles</li></ul></div>
 <div class="card"><h3 data-en="Short Motion Graphics" data-ar="موشن جرافيك قصير">Short Motion Graphics</h3><div class="price" style="font-size:24px" data-en="on request" data-ar="حسب الطلب">on request</div>
 <ul><li data-en="Intros, promo and social clips" data-ar="مقدمات وإعلانات ومقاطع اجتماعية">Intros, promo and social clips</li></ul></div>
-<div class="card"><h3 data-en="n8n Workflow Automation" data-ar="أتمتة سير العمل n8n">n8n Workflow Automation</h3><div class="price" style="font-size:24px">from $150</div>
+<div class="card"><h3 data-en="n8n Workflow Automation" data-ar="أتمتة سير العمل n8n">n8n Workflow Automation</h3><div class="price" style="font-size:24px" data-en="from $150" data-ar="ابتداءً من 150$">from $150</div>
 <ul><li data-en="Forms to Sheets, Slack or email" data-ar="من النماذج إلى Sheets أو Slack أو البريد">Forms to Sheets, Slack or email</li><li data-en="Simple workflows in 48 hours" data-ar="سير عمل بسيط خلال 48 ساعة">Simple workflows in 48 hours</li></ul></div>
 </div>
 
 <h2 data-en="Literal vs. native" data-ar="ترجمة حرفية أم أصيلة">Literal vs. native</h2>
 <div class="ba">
-<div><small>Machine translation</small><b dir="rtl">احصل على أفضل قيمة الآن وابدأ رحلتك</b></div>
-<div><small>Native Gulf copy</small><b dir="rtl">ابدأ اليوم بسعر يناسبك، ونوصل لك لين الباب</b></div>
+<div><small data-en="Machine translation" data-ar="ترجمة آلية">Machine translation</small><b dir="rtl">احصل على أفضل قيمة الآن وابدأ رحلتك</b></div>
+<div><small data-en="Native Gulf copy" data-ar="كتابة خليجية أصيلة">Native Gulf copy</small><b dir="rtl">ابدأ اليوم بسعر يناسبك، ونوصل لك لين الباب</b></div>
 </div>
 
 <h2 data-en="How it works" data-ar="كيف نعمل">How it works</h2>
@@ -68,12 +68,12 @@ footer{color:var(--mut);font-size:14px;padding:40px 0}
 <li data-en="Receive the full work in 24 hours. Pay the rest." data-ar="استلم العمل كاملاً خلال 24 ساعة وادفع المتبقي.">Receive the full work in 24 hours. Pay the rest.</li>
 </ul>
 <a class="cta" href="mailto:bigramy@gmail.com?subject=Arabic%20landing%20page" data-en="Start with the free sample" data-ar="ابدأ بالنموذج المجاني">Start with the free sample</a>
-<footer>© Arabify Studio · Native Arabic · Saudi-based</footer>
+<footer data-en="© Arabify Studio · Native Arabic · Saudi-based" data-ar="© أرابيفاي ستوديو · عربية أصيلة · من السعودية">© Arabify Studio · Native Arabic · Saudi-based</footer>
 </div>
 <script>
 let l='en';function tg(){l=l==='en'?'ar':'en';document.documentElement.lang=l;document.documentElement.dir=l==='ar'?'rtl':'ltr';
 document.querySelectorAll('[data-en]').forEach(e=>e.textContent=e.getAttribute('data-'+l));
-document.getElementById('lb').textContent=l==='en'?'العربية':'English'}
+document.title=l==='ar'?'أرابيفاي ستوديو – تعريب صفحات الهبوط ومتاجر Shopify بعربية أصيلة خلال 24 ساعة':'Arabify Studio – Native Arabic Landing Pages & Shopify Localization in 24h';document.getElementById('lb').textContent=l==='en'?'العربية':'English'}
 </script>
 </body>
 </html>
