@@ -3,78 +3,274 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Arabify Studio – Native Arabic Landing Pages & Shopify Localization in 24h</title>
-<meta name="description" content="Native Arabic (Gulf/MSA) localization for landing pages and Shopify stores. RTL-ready. Flat price from $149. Delivered in 24 hours.">
+<title>Arabify Studio – Native Arabic Landing Pages, E-Commerce Stores & Video Production</title>
+<meta name="description" content="Native Arabic (Gulf/MSA) localization, Shopify e-commerce stores, and high-retention video motion graphics. Live in 24 hours.">
 <style>
-:root{--bg:#0b1220;--card:#121c33;--ac:#22c55e;--tx:#e8eefc;--mut:#9fb0d0}
-*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6}
-.w{max-width:960px;margin:0 auto;padding:24px}
-header{display:flex;justify-content:space-between;align-items:center}
-.logo{font-weight:800;font-size:20px}.logo span{color:var(--ac)}
-button.lang{background:none;border:1px solid var(--mut);color:var(--tx);padding:6px 14px;border-radius:20px;cursor:pointer}
-h1{font-size:clamp(30px,5vw,50px);line-height:1.15;margin:48px 0 16px}
-p.sub{color:var(--mut);font-size:19px;max-width:640px}
-.cta{display:inline-block;margin-top:24px;background:var(--ac);color:#04210f;font-weight:700;padding:14px 28px;border-radius:10px;text-decoration:none}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:48px 0}
-.card{background:var(--card);padding:22px;border-radius:14px}
-.card h3{margin-top:0}.price{font-size:34px;font-weight:800;color:var(--ac)}
-ul{padding-inline-start:20px;color:var(--mut)}
-.ba{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.ba div{background:var(--card);padding:18px;border-radius:12px}
-.ba small{color:var(--mut);display:block;margin-bottom:6px}
+:root{
+  --bg:#0b1220;
+  --card:#121c33;
+  --card-border:rgba(255,255,255,0.08);
+  --ac:#22c55e;
+  --ac-glow:rgba(34,197,94,0.3);
+  --tx:#e8eefc;
+  --mut:#9fb0d0;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6}
+.w{max-width:1040px;margin:0 auto;padding:28px 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--card-border)}
+.logo{font-weight:900;font-size:22px;letter-spacing:-0.5px}.logo span{color:var(--ac)}
+button.lang{background:rgba(255,255,255,0.06);border:1px solid var(--card-border);color:var(--tx);padding:8px 18px;border-radius:22px;cursor:pointer;font-weight:600;transition:all .2s}
+button.lang:hover{background:rgba(255,255,255,0.12);border-color:var(--ac)}
+h1{font-size:clamp(32px,5vw,52px);line-height:1.15;margin:44px 0 16px;font-weight:900;letter-spacing:-0.8px}
+p.sub{color:var(--mut);font-size:19px;max-width:700px;margin-bottom:28px}
+.cta{display:inline-block;background:var(--ac);color:#04210f;font-weight:800;padding:14px 30px;border-radius:10px;text-decoration:none;box-shadow:0 8px 24px var(--ac-glow);transition:transform .2s}
+.cta:hover{transform:translateY(-2px)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:40px 0}
+.card{background:var(--card);padding:26px;border-radius:16px;border:1px solid var(--card-border);display:flex;flex-direction:column;justify-content:space-between}
+.card h3{margin-top:0;font-size:20px;margin-bottom:8px}.price{font-size:34px;font-weight:900;color:var(--ac);margin-bottom:12px}
+ul{padding-inline-start:20px;color:var(--mut);margin:0}
+li{margin-bottom:6px}
+
+/* Portfolio Section */
+.sec-head{margin:64px 0 24px}
+.sec-head h2{font-size:clamp(26px,4vw,38px);margin:0 0 8px;font-weight:900}
+.sec-head p{color:var(--mut);margin:0;font-size:17px}
+.port-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:24px;margin-top:24px}
+.port-card{background:var(--card);border-radius:18px;border:1px solid var(--card-border);overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,border-color .2s}
+.port-card:hover{transform:translateY(-4px);border-color:rgba(34,197,94,0.4)}
+.port-media{background:#070d18;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid var(--card-border)}
+.port-body{padding:22px;display:flex;flex-direction:column;flex:1}
+.port-tag{align-self:flex-start;background:rgba(34,197,94,0.12);color:var(--ac);font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:5px 12px;border-radius:20px;margin-bottom:12px;border:1px solid rgba(34,197,94,0.25)}
+.port-title{font-size:20px;font-weight:800;margin:0 0 10px;color:#fff}
+.port-desc{color:var(--mut);font-size:15px;line-height:1.55;margin:0 0 16px;flex:1}
+.port-features{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.pill{background:rgba(255,255,255,0.05);color:var(--tx);font-size:12px;padding:4px 10px;border-radius:8px;border:1px solid rgba(255,255,255,0.08)}
+.port-link{display:inline-flex;align-items:center;gap:8px;color:#fff;background:rgba(255,255,255,0.08);padding:10px 18px;border-radius:10px;text-decoration:none;font-weight:700;font-size:14px;border:1px solid var(--card-border);transition:all .2s;align-self:flex-start}
+.port-link:hover{background:var(--ac);color:#04210f;border-color:var(--ac)}
+.video-preview{width:100%;max-height:420px;object-fit:cover;border-radius:10px;background:#000}
+
+/* Comparison & Process */
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.ba div{background:var(--card);padding:22px;border-radius:14px;border:1px solid var(--card-border)}
+.ba small{color:var(--mut);display:block;margin-bottom:8px;font-size:13px;font-weight:700;text-transform:uppercase}
 @media(max-width:640px){.ba{grid-template-columns:1fr}}
-footer{color:var(--mut);font-size:14px;padding:40px 0}
-[data-ar]{}
+footer{color:var(--mut);font-size:14px;padding:48px 0 24px;border-top:1px solid var(--card-border);margin-top:64px;text-align:center}
 </style>
 </head>
 <body>
 <div class="w">
-<header><div class="logo" dir="ltr">Arabify<span>.</span>Studio</div><button class="lang" onclick="tg()" id="lb">العربية</button></header>
+<header>
+  <div class="logo" dir="ltr">Arabify<span>.</span>Studio</div>
+  <button class="lang" onclick="tg()" id="lb">العربية</button>
+</header>
 
-<h1 data-en="Your landing page, in native Arabic. Live in 24 hours." data-ar="صفحتك بعربية أصيلة تبيع. جاهزة خلال 24 ساعة.">Your landing page, in native Arabic. Live in 24 hours.</h1>
-<p class="sub" data-en="Machine translation kills trust in Saudi Arabia and the Gulf. I rewrite your page the way local customers actually speak, with a clean right-to-left layout. Flat price, no surprises."
- data-ar="الترجمة الآلية تضعف ثقة العميل الخليجي. أعيد كتابة صفحتك بلغة يتحدث بها عملاؤك فعلاً، مع تنسيق RTL نظيف. سعر ثابت وبدون مفاجآت.">Machine translation kills trust in Saudi Arabia and the Gulf. I rewrite your page the way local customers actually speak, with a clean right-to-left layout. Flat price, no surprises.</p>
-<a class="cta" href="mailto:bigramy@gmail.com?subject=Arabic%20landing%20page" data-en="Get a free sample of your page" data-ar="احصل على نموذج مجاني لصفحتك">Get a free sample of your page</a>
+<!-- Hero Section -->
+<h1 data-en="Your digital product, in native Arabic. Live in 24 hours." data-ar="منتجك الرقمي بعربية أصيلة تبيع. جاهز خلال 24 ساعة.">Your digital product, in native Arabic. Live in 24 hours.</h1>
+<p class="sub" data-en="Machine translation kills trust in Saudi Arabia and the Gulf. We build and localize high-converting landing pages, full e-commerce stores, and high-retention motion graphics ads that resonate with local customers."
+ data-ar="الترجمة الآلية تضعف ثقة العميل في السعودية والخليج. نصمم ونعرب صفحات الهبوط، المتاجر الإلكترونية، ومقاطع الموشن جرافيك الإعلانية الاحترافية بلغة يفهمها عملاؤك ويتفاعلون معها فوراً.">Machine translation kills trust in Saudi Arabia and the Gulf. We build and localize high-converting landing pages, full e-commerce stores, and high-retention motion graphics ads that resonate with local customers.</p>
+<a class="cta" href="mailto:bigramy@gmail.com?subject=Project%20Inquiry%20-%20Arabify" data-en="Start your project with a free sample" data-ar="ابدأ مشروعك بنموذج مجاني">Start your project with a free sample</a>
 
+<!-- ================= PORTFOLIO SHOWCASE ================= -->
+<div class="sec-head">
+  <h2 data-en="Featured Work & Proof of Execution" data-ar="أعمالنا السابقة ونماذج التنفيذ الحية">Featured Work &amp; Proof of Execution</h2>
+  <p data-en="Live platforms, e-commerce stores, and motion graphics delivered with top engineering and creative standards." data-ar="منصات حية، متاجر إلكترونية متكاملة، وفيديوهات إعلانية أنتجناها بأعلى معايير البرمجة والتصميم.">Live platforms, e-commerce stores, and motion graphics delivered with top engineering and creative standards.</p>
+</div>
+
+<div class="port-grid">
+
+  <!-- Project 1: AIDO Travel Video Ad -->
+  <div class="port-card">
+    <div class="port-media" style="padding:16px;">
+      <video class="video-preview" controls playsinline preload="metadata" poster="aido-poster.jpg" src="aido-travel-teaser.mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="port-body">
+      <div class="port-tag" data-en="Motion Graphics & AI Video" data-ar="موشن جرافيك وإنتاج فيديو ذكي">Motion Graphics &amp; AI Video</div>
+      <div class="port-title">AIDO – AI Travel Assistant</div>
+      <p class="port-desc" data-en="15-second high-retention vertical teaser ad crafted with programmatic Remotion animations, official brand identity, genuine app UI showcase, and cinematic AI travel footage strictly formatted for TikTok and Instagram Reels safe zones."
+      data-ar="فيديو إعلاني رأسي تفاعلي 15 ثانية صُمم برمجياً عبر Remotion مع دمج الهوية الرسمية وواجهة التطبيق الحقيقية ولقطات سفر سينمائية بالذكاء الاصطناعي مهيأة بالكامل للمقاسات الآمنة للريلز وتيك توك.">15-second high-retention vertical teaser ad crafted with programmatic Remotion animations, official brand identity, genuine app UI showcase, and cinematic AI travel footage strictly formatted for TikTok and Instagram Reels safe zones.</p>
+      <div class="port-features">
+        <span class="pill">Remotion Engine</span>
+        <span class="pill">AI Drone Video</span>
+        <span class="pill">App UI Mockup</span>
+        <span class="pill">9:16 Vertical Safe Zone</span>
+      </div>
+      <a class="port-link" href="aido-travel-teaser.mp4" target="_blank" data-en="Watch Full Video ↗" data-ar="مشاهدة الفيديو كاملاً ↗">Watch Full Video ↗</a>
+    </div>
+  </div>
+
+  <!-- Project 2: Azza Kitchen E-Commerce Store -->
+  <div class="port-card">
+    <div class="port-media" style="height:220px;background:linear-gradient(135deg,#0e2316 0%,#121c33 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center;">
+      <div style="font-size:46px;margin-bottom:8px;">🍲</div>
+      <div style="font-size:22px;font-weight:900;color:#22c55e;">مطبخ عزة | Azza Food</div>
+      <div style="font-size:13px;color:#9fb0d0;margin-top:4px;">Saudi Restaurant &amp; Food Delivery Store</div>
+    </div>
+    <div class="port-body">
+      <div class="port-tag" data-en="E-Commerce & Food Ordering" data-ar="متجر إلكتروني وتوصيل طعام">E-Commerce &amp; Food Ordering</div>
+      <div class="port-title" data-en="Azza Food – Modern Saudi Store" data-ar="مطبخ عزة – متجر أطعمة وتوصيل إلكتروني">Azza Food – Modern Saudi Store</div>
+      <p class="port-desc" data-en="Fully functional Saudi cuisine restaurant and e-commerce food ordering store in Medina. Features interactive menus, fast cart checkout, localized Arabian design, and ultra-fast edge deployment."
+      data-ar="متجر إلكتروني متكامل لمطعم أكلات سعودية بالمدينة المنورة، يشتمل على قائمة طعام تفاعلية، سلة مشتريات سلسة، معالجة فورية للطلبات، وتصميم متوافق 100% مع تجربة المستخدم على الجوال.">Fully functional Saudi cuisine restaurant and e-commerce food ordering store in Medina. Features interactive menus, fast cart checkout, localized Arabian design, and ultra-fast edge deployment.</p>
+      <div class="port-features">
+        <span class="pill">Cart & Checkout</span>
+        <span class="pill">Interactive Food Menu</span>
+        <span class="pill">Mobile-First RTL</span>
+        <span class="pill">Vercel Edge Speed</span>
+      </div>
+      <a class="port-link" href="https://azzafood.vercel.app/" target="_blank" rel="noopener" data-en="Visit Live Store ↗" data-ar="زيارة المتجر المباشر ↗">Visit Live Store ↗</a>
+    </div>
+  </div>
+
+  <!-- Project 3: NoorPath Educational Platform -->
+  <div class="port-card">
+    <div class="port-media" style="height:220px;background:linear-gradient(135deg,#132238 0%,#091322 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center;">
+      <div style="font-size:46px;margin-bottom:8px;">📚</div>
+      <div style="font-size:22px;font-weight:900;color:#38bdf8;">NOORPATH</div>
+      <div style="font-size:13px;color:#9fb0d0;margin-top:4px;">Interactive Learning &amp; Web Platform</div>
+    </div>
+    <div class="port-body">
+      <div class="port-tag" data-en="Web App & E-Learning Platform" data-ar="تطبيق ويب ومنصة تعليمية">Web App &amp; E-Learning Platform</div>
+      <div class="port-title" data-en="NoorPath – Digital Learning Platform" data-ar="منصة نور باث – منصة تعليمية تفاعلية">NoorPath – Digital Learning Platform</div>
+      <p class="port-desc" data-en="Comprehensive digital learning web application with interactive course navigation, integrated multimedia audio & content, responsive modern dark UI, and full native RTL localization."
+      data-ar="منصة تعليمية رقمية متكاملة تقدم مسارات معرفية تفاعلية، دعم الوسائط المتعددة والصوتيات، واجهة عصرية سريعة تدعم العربية أصالة، وأداء استثنائي عبر الويب.">Comprehensive digital learning web application with interactive course navigation, integrated multimedia audio & content, responsive modern dark UI, and full native RTL localization.</p>
+      <div class="port-features">
+        <span class="pill">Full-Stack Web App</span>
+        <span class="pill">Multi-media Audio/Visual</span>
+        <span class="pill">Native Arabic UX</span>
+        <span class="pill">Responsive Design</span>
+      </div>
+      <a class="port-link" href="https://noorpaths.vercel.app/" target="_blank" rel="noopener" data-en="Visit Live Platform ↗" data-ar="زيارة المنصة الحية ↗">Visit Live Platform ↗</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Core Services Grid -->
+<div class="sec-head">
+  <h2 data-en="Core Services & Transparent Pricing" data-ar="الخدمات الأساسية والأسعار الثابتة">Core Services &amp; Transparent Pricing</h2>
+</div>
 <div class="grid">
-<div class="card"><h3 data-en="Landing Page Arabic" data-ar="تعريب صفحة هبوط">Landing Page Arabic</h3><div class="price">$149</div>
-<ul><li data-en="Native copywriting (Gulf or MSA)" data-ar="كتابة تسويقية أصيلة (خليجي أو فصحى)">Native copywriting (Gulf or MSA)</li><li data-en="RTL layout ready to paste" data-ar="تنسيق RTL جاهز">RTL layout ready to paste</li><li data-en="Delivered in 24 hours" data-ar="تسليم خلال 24 ساعة">Delivered in 24 hours</li></ul></div>
-<div class="card"><h3 data-en="Shopify Arabic Store" data-ar="متجر Shopify بالعربية">Shopify Arabic Store</h3><div class="price">$199</div>
-<ul><li data-en="Up to 25 products translated" data-ar="ترجمة حتى 25 منتجاً">Up to 25 products translated</li><li data-en="Policies and emails localized" data-ar="توطين السياسات والرسائل">Policies and emails localized</li><li data-en="RTL setup guidance" data-ar="إرشاد إعداد RTL">RTL setup guidance</li></ul></div>
-<div class="card"><h3 data-en="Page Fix & Polish" data-ar="تحسين صفحة قائمة">Page Fix &amp; Polish</h3><div class="price">$119</div>
-<ul><li data-en="Headline, CTA, mobile fixes" data-ar="العنوان والدعوة للفعل والجوال">Headline, CTA, mobile fixes</li><li data-en="Improved version deployed" data-ar="نسخة محسنة منشورة">Improved version deployed</li><li data-en="24-hour turnaround" data-ar="خلال 24 ساعة">24-hour turnaround</li></ul></div>
+  <div class="card">
+    <div>
+      <h3 data-en="Landing Page Arabic" data-ar="تعريب صفحة هبوط">Landing Page Arabic</h3>
+      <div class="price">$149</div>
+      <ul>
+        <li data-en="Native copywriting (Gulf or MSA)" data-ar="كتابة تسويقية أصيلة (خليجي أو فصحى)">Native copywriting (Gulf or MSA)</li>
+        <li data-en="RTL layout ready to paste" data-ar="تنسيق RTL جاهز">RTL layout ready to paste</li>
+        <li data-en="Delivered in 24 hours" data-ar="تسليم خلال 24 ساعة">Delivered in 24 hours</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <div>
+      <h3 data-en="Shopify Arabic Store" data-ar="متجر Shopify بالعربية">Shopify Arabic Store</h3>
+      <div class="price">$199</div>
+      <ul>
+        <li data-en="Up to 25 products translated" data-ar="ترجمة حتى 25 منتجاً">Up to 25 products translated</li>
+        <li data-en="Policies and emails localized" data-ar="توطين السياسات والرسائل">Policies and emails localized</li>
+        <li data-en="RTL setup guidance" data-ar="إرشاد إعداد RTL">RTL setup guidance</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <div>
+      <h3 data-en="Page Fix & Polish" data-ar="تحسين صفحة قائمة">Page Fix &amp; Polish</h3>
+      <div class="price">$119</div>
+      <ul>
+        <li data-en="Headline, CTA, mobile fixes" data-ar="العنوان والدعوة للفعل والجوال">Headline, CTA, mobile fixes</li>
+        <li data-en="Improved version deployed" data-ar="نسخة محسنة منشورة">Improved version deployed</li>
+        <li data-en="24-hour turnaround" data-ar="خلال 24 ساعة">24-hour turnaround</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
-<h2 data-en="Extra services" data-ar="خدمات إضافية">Extra services</h2>
+<!-- Extra Services -->
+<div class="sec-head">
+  <h2 data-en="Media & Automation Capabilities" data-ar="خدمات الميديا والأتمتة">Media &amp; Automation Capabilities</h2>
+</div>
 <div class="grid" style="margin-top:16px">
-<div class="card"><h3 data-en="Video to Short Clips" data-ar="تقطيع الفيديو لمقاطع قصيرة">Video to Short Clips</h3><div class="price" style="font-size:24px" data-en="from $100" data-ar="ابتداءً من 100$">from $100</div>
-<ul><li data-en="3-5 vertical clips with captions" data-ar="3-5 مقاطع عمودية مع كابشن">3-5 vertical clips with captions</li><li data-en="Arabic and English subtitles" data-ar="ترجمة عربية وإنجليزية">Arabic and English subtitles</li></ul></div>
-<div class="card"><h3 data-en="Short Motion Graphics" data-ar="موشن جرافيك قصير">Short Motion Graphics</h3><div class="price" style="font-size:24px" data-en="on request" data-ar="حسب الطلب">on request</div>
-<ul><li data-en="Intros, promo and social clips" data-ar="مقدمات وإعلانات ومقاطع اجتماعية">Intros, promo and social clips</li></ul></div>
-<div class="card"><h3 data-en="n8n Workflow Automation" data-ar="أتمتة سير العمل n8n">n8n Workflow Automation</h3><div class="price" style="font-size:24px" data-en="from $150" data-ar="ابتداءً من 150$">from $150</div>
-<ul><li data-en="Forms to Sheets, Slack or email" data-ar="من النماذج إلى Sheets أو Slack أو البريد">Forms to Sheets, Slack or email</li><li data-en="Simple workflows in 48 hours" data-ar="سير عمل بسيط خلال 48 ساعة">Simple workflows in 48 hours</li></ul></div>
+  <div class="card">
+    <div>
+      <h3 data-en="Video to Short Clips" data-ar="تقطيع الفيديو لمقاطع قصيرة">Video to Short Clips</h3>
+      <div class="price" style="font-size:24px" data-en="from $100" data-ar="ابتداءً من 100$">from $100</div>
+      <ul>
+        <li data-en="3-5 vertical clips with captions" data-ar="3-5 مقاطع عمودية مع كابشن">3-5 vertical clips with captions</li>
+        <li data-en="Arabic and English subtitles" data-ar="ترجمة عربية وإنجليزية">Arabic and English subtitles</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <div>
+      <h3 data-en="Programmatic Motion Graphics" data-ar="موشن جرافيك برمجي واحترافي">Programmatic Motion Graphics</h3>
+      <div class="price" style="font-size:24px" data-en="on request" data-ar="حسب الطلب">on request</div>
+      <ul>
+        <li data-en="Remotion code-based animated ads" data-ar="إعلانات موشن جرافيك برمجية بتقنية Remotion">Remotion code-based animated ads</li>
+        <li data-en="Intros, promo and social reels" data-ar="مقدمات، إعلانات ريلز، ومقاطع ترويجية">Intros, promo and social reels</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <div>
+      <h3 data-en="n8n Workflow Automation" data-ar="أتمتة سير العمل n8n">n8n Workflow Automation</h3>
+      <div class="price" style="font-size:24px" data-en="from $150" data-ar="ابتداءً من 150$">from $150</div>
+      <ul>
+        <li data-en="Forms to Sheets, Slack or email" data-ar="من النماذج إلى Sheets أو Slack أو البريد">Forms to Sheets, Slack or email</li>
+        <li data-en="Simple workflows in 48 hours" data-ar="سير عمل بسيط خلال 48 ساعة">Simple workflows in 48 hours</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
-<h2 data-en="Literal vs. native" data-ar="ترجمة حرفية أم أصيلة">Literal vs. native</h2>
+<!-- Comparison -->
+<div class="sec-head">
+  <h2 data-en="Literal vs. native" data-ar="ترجمة حرفية أم أصيلة">Literal vs. native</h2>
+</div>
 <div class="ba">
-<div><small data-en="Machine translation" data-ar="ترجمة آلية">Machine translation</small><b dir="rtl">احصل على أفضل قيمة الآن وابدأ رحلتك</b><em data-en="Meaning: stiff, word-for-word, sounds like an ad template." data-ar="" style="display:block;color:#9fb0d0;font-size:13px;margin-top:6px;font-style:normal">Meaning: stiff, word-for-word, sounds like an ad template.</em></div>
-<div><small data-en="Native Gulf copy" data-ar="كتابة خليجية أصيلة">Native Gulf copy</small><b dir="rtl">ابدأ اليوم بسعر يناسبك، ونوصل لك لين الباب</b><em data-en="Meaning: warm, natural Gulf tone: start today at a fair price, and we deliver to your door." data-ar="" style="display:block;color:#9fb0d0;font-size:13px;margin-top:6px;font-style:normal">Meaning: warm, natural Gulf tone: start today at a fair price, and we deliver to your door.</em></div>
+  <div>
+    <small data-en="Machine translation" data-ar="ترجمة آلية">Machine translation</small>
+    <b dir="rtl">احصل على أفضل قيمة الآن وابدأ رحلتك</b>
+    <em data-en="Meaning: stiff, word-for-word, sounds like an ad template." data-ar="" style="display:block;color:#9fb0d0;font-size:13px;margin-top:6px;font-style:normal">Meaning: stiff, word-for-word, sounds like an ad template.</em>
+  </div>
+  <div>
+    <small data-en="Native Gulf copy" data-ar="كتابة خليجية أصيلة">Native Gulf copy</small>
+    <b dir="rtl">ابدأ اليوم بسعر يناسبك، ونوصل لك لين الباب</b>
+    <em data-en="Meaning: warm, natural Gulf tone: start today at a fair price, and we deliver to your door." data-ar="" style="display:block;color:#9fb0d0;font-size:13px;margin-top:6px;font-style:normal">Meaning: warm, natural Gulf tone: start today at a fair price, and we deliver to your door.</em>
+  </div>
 </div>
 
-<h2 data-en="How it works" data-ar="كيف نعمل">How it works</h2>
-<ul>
-<li data-en="Send your page link. I reply with a free sample." data-ar="أرسل رابط صفحتك. أرد عليك بنموذج مجاني.">Send your page link. I reply with a free sample.</li>
-<li data-en="Approve it. 50% upfront by bank transfer." data-ar="وافق عليه. 50% مقدماً بتحويل بنكي.">Approve it. 50% upfront by bank transfer.</li>
-<li data-en="Receive the full work in 24 hours. Pay the rest." data-ar="استلم العمل كاملاً خلال 24 ساعة وادفع المتبقي.">Receive the full work in 24 hours. Pay the rest.</li>
-</ul>
-<a class="cta" href="mailto:bigramy@gmail.com?subject=Arabic%20landing%20page" data-en="Start with the free sample" data-ar="ابدأ بالنموذج المجاني">Start with the free sample</a>
-<footer data-en="© Arabify Studio · Native Arabic · Saudi-based" data-ar="© أرابيفاي ستوديو · عربية أصيلة · من السعودية">© Arabify Studio · Native Arabic · Saudi-based</footer>
+<!-- How it works -->
+<div class="sec-head">
+  <h2 data-en="How it works" data-ar="كيف نعمل">How it works</h2>
 </div>
+<ul>
+  <li data-en="Send your page link or brief. I reply with a free sample." data-ar="أرسل رابط صفحتك أو فكرتك. أرد عليك بنموذج مجاني.">Send your page link or brief. I reply with a free sample.</li>
+  <li data-en="Approve it. 50% upfront by direct bank transfer." data-ar="وافق عليه. 50% مقدماً بتحويل بنكي مباشر.">Approve it. 50% upfront by direct bank transfer.</li>
+  <li data-en="Receive the full work in 24 hours. Pay the rest." data-ar="استلم العمل كاملاً خلال 24 ساعة وادفع المتبقي.">Receive the full work in 24 hours. Pay the rest.</li>
+</ul>
+
+<div style="margin-top:32px">
+  <a class="cta" href="mailto:bigramy@gmail.com?subject=Project%20Inquiry%20-%20Arabify" data-en="Start with a free sample" data-ar="ابدأ بالنموذج المجاني الآن">Start with a free sample</a>
+</div>
+
+<footer data-en="© Arabify Studio · High-Performance Web, Stores & Video Production · Saudi-based" data-ar="© أرابيفاي ستوديو · بناء المتاجر والمنصات وصناعة الفيديو · المملكة العربية السعودية">© Arabify Studio · High-Performance Web, Stores &amp; Video Production · Saudi-based</footer>
+</div>
+
 <script>
-let l='en';function tg(){l=l==='en'?'ar':'en';document.documentElement.lang=l;document.documentElement.dir=l==='ar'?'rtl':'ltr';
-document.querySelectorAll('[data-en]').forEach(e=>e.textContent=e.getAttribute('data-'+l));
-document.title=l==='ar'?'أرابيفاي ستوديو – تعريب صفحات الهبوط ومتاجر Shopify بعربية أصيلة خلال 24 ساعة':'Arabify Studio – Native Arabic Landing Pages & Shopify Localization in 24h';document.getElementById('lb').textContent=l==='en'?'العربية':'English'}
+let l='en';
+function tg(){
+  l=l==='en'?'ar':'en';
+  document.documentElement.lang=l;
+  document.documentElement.dir=l==='ar'?'rtl':'ltr';
+  document.querySelectorAll('[data-en]').forEach(e=>{
+    const v=e.getAttribute('data-'+l);
+    if(v)e.textContent=v;
+  });
+  document.title=l==='ar'?'أرابيفاي ستوديو – بناء المتاجر الإلكترونية، تعريب المواقع وصناعة الفيديو':'Arabify Studio – Native Arabic Landing Pages, E-Commerce Stores & Video Production';
+  document.getElementById('lb').textContent=l==='en'?'العربية':'English';
+}
 </script>
 </body>
 </html>
-
