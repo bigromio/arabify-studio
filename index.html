@@ -17,13 +17,13 @@
 }
 *{box-sizing:border-box}
 body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6}
-.w{max-width:1040px;margin:0 auto;padding:28px 20px}
+.w{max-width:1080px;margin:0 auto;padding:28px 20px}
 header{display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--card-border)}
 .logo{font-weight:900;font-size:22px;letter-spacing:-0.5px}.logo span{color:var(--ac)}
 button.lang{background:rgba(255,255,255,0.06);border:1px solid var(--card-border);color:var(--tx);padding:8px 18px;border-radius:22px;cursor:pointer;font-weight:600;transition:all .2s}
 button.lang:hover{background:rgba(255,255,255,0.12);border-color:var(--ac)}
 h1{font-size:clamp(32px,5vw,52px);line-height:1.15;margin:44px 0 16px;font-weight:900;letter-spacing:-0.8px}
-p.sub{color:var(--mut);font-size:19px;max-width:700px;margin-bottom:28px}
+p.sub{color:var(--mut);font-size:19px;max-width:720px;margin-bottom:28px}
 .cta{display:inline-block;background:var(--ac);color:#04210f;font-weight:800;padding:14px 30px;border-radius:10px;text-decoration:none;box-shadow:0 8px 24px var(--ac-glow);transition:transform .2s}
 .cta:hover{transform:translateY(-2px)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:40px 0}
@@ -36,19 +36,19 @@ li{margin-bottom:6px}
 .sec-head{margin:64px 0 24px}
 .sec-head h2{font-size:clamp(26px,4vw,38px);margin:0 0 8px;font-weight:900}
 .sec-head p{color:var(--mut);margin:0;font-size:17px}
-.port-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:24px;margin-top:24px}
-.port-card{background:var(--card);border-radius:18px;border:1px solid var(--card-border);overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,border-color .2s}
-.port-card:hover{transform:translateY(-4px);border-color:rgba(34,197,94,0.4)}
-.port-media{background:#070d18;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid var(--card-border)}
-.port-body{padding:22px;display:flex;flex-direction:column;flex:1}
+.port-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;margin-top:24px}
+.port-card{background:var(--card);border-radius:20px;border:1px solid var(--card-border);overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,border-color .2s;box-shadow:0 12px 30px rgba(0,0,0,0.35)}
+.port-card:hover{transform:translateY(-5px);border-color:rgba(34,197,94,0.45)}
+.port-media{background:#070d18;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid var(--card-border);padding:14px}
+.port-body{padding:24px;display:flex;flex-direction:column;flex:1}
 .port-tag{align-self:flex-start;background:rgba(34,197,94,0.12);color:var(--ac);font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:5px 12px;border-radius:20px;margin-bottom:12px;border:1px solid rgba(34,197,94,0.25)}
-.port-title{font-size:20px;font-weight:800;margin:0 0 10px;color:#fff}
+.port-title{font-size:21px;font-weight:800;margin:0 0 10px;color:#fff}
 .port-desc{color:var(--mut);font-size:15px;line-height:1.55;margin:0 0 16px;flex:1}
-.port-features{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.port-features{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
 .pill{background:rgba(255,255,255,0.05);color:var(--tx);font-size:12px;padding:4px 10px;border-radius:8px;border:1px solid rgba(255,255,255,0.08)}
-.port-link{display:inline-flex;align-items:center;gap:8px;color:#fff;background:rgba(255,255,255,0.08);padding:10px 18px;border-radius:10px;text-decoration:none;font-weight:700;font-size:14px;border:1px solid var(--card-border);transition:all .2s;align-self:flex-start}
-.port-link:hover{background:var(--ac);color:#04210f;border-color:var(--ac)}
-.video-preview{width:100%;max-height:420px;object-fit:cover;border-radius:10px;background:#000}
+.port-link{display:inline-flex;align-items:center;gap:8px;color:#fff;background:rgba(255,255,255,0.08);padding:11px 20px;border-radius:10px;text-decoration:none;font-weight:700;font-size:14px;border:1px solid var(--card-border);transition:all .2s;align-self:flex-start}
+.port-link:hover{background:var(--ac);color:#04210f;border-color:var(--ac);box-shadow:0 4px 15px var(--ac-glow)}
+.media-preview{width:100%;height:380px;object-fit:cover;object-position:top;border-radius:12px;background:#060a12;display:block;border:1px solid rgba(255,255,255,0.08)}
 
 /* Comparison & Process */
 .ba{display:grid;grid-template-columns:1fr 1fr;gap:18px}
@@ -81,8 +81,8 @@ footer{color:var(--mut);font-size:14px;padding:48px 0 24px;border-top:1px solid 
 
   <!-- Project 1: AIDO Travel Video Ad -->
   <div class="port-card">
-    <div class="port-media" style="padding:16px;">
-      <video class="video-preview" controls playsinline preload="metadata" poster="aido-poster.jpg" src="aido-travel-teaser.mp4">
+    <div class="port-media">
+      <video class="media-preview" controls playsinline preload="metadata" poster="aido-poster.jpg" src="aido-travel-teaser.mp4">
         Your browser does not support the video tag.
       </video>
     </div>
@@ -103,10 +103,8 @@ footer{color:var(--mut);font-size:14px;padding:48px 0 24px;border-top:1px solid 
 
   <!-- Project 2: Azza Kitchen E-Commerce Store -->
   <div class="port-card">
-    <div class="port-media" style="height:220px;background:linear-gradient(135deg,#0e2316 0%,#121c33 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center;">
-      <div style="font-size:46px;margin-bottom:8px;">🍲</div>
-      <div style="font-size:22px;font-weight:900;color:#22c55e;">مطبخ عزة | Azza Food</div>
-      <div style="font-size:13px;color:#9fb0d0;margin-top:4px;">Saudi Restaurant &amp; Food Delivery Store</div>
+    <div class="port-media">
+      <img class="media-preview" src="azza-mobile.jpg" alt="Azza Food E-Commerce Store Mobile Screenshot" loading="lazy">
     </div>
     <div class="port-body">
       <div class="port-tag" data-en="E-Commerce & Food Ordering" data-ar="متجر إلكتروني وتوصيل طعام">E-Commerce &amp; Food Ordering</div>
@@ -125,10 +123,8 @@ footer{color:var(--mut);font-size:14px;padding:48px 0 24px;border-top:1px solid 
 
   <!-- Project 3: NoorPath Educational Platform -->
   <div class="port-card">
-    <div class="port-media" style="height:220px;background:linear-gradient(135deg,#132238 0%,#091322 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center;">
-      <div style="font-size:46px;margin-bottom:8px;">📚</div>
-      <div style="font-size:22px;font-weight:900;color:#38bdf8;">NOORPATH</div>
-      <div style="font-size:13px;color:#9fb0d0;margin-top:4px;">Interactive Learning &amp; Web Platform</div>
+    <div class="port-media">
+      <img class="media-preview" src="noorpath-mobile.jpg" alt="NoorPath Learning Platform Mobile Screenshot" loading="lazy">
     </div>
     <div class="port-body">
       <div class="port-tag" data-en="Web App & E-Learning Platform" data-ar="تطبيق ويب ومنصة تعليمية">Web App &amp; E-Learning Platform</div>
